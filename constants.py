@@ -12,7 +12,6 @@ neghina_id = 385792261100666882
 punishDurationType1 = 15.0
 punishDurationType2 = 15.0
 
-punishedTimer = 600.0
-teasedTimer = 300.0
-#punishedChannel = 777930613390180394
+punishedTimer = 250.0
+teasedTimer = 150.0
 punishedChannel = 778284257789345792

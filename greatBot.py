@@ -76,6 +76,7 @@ async def on_reaction_add(reaction, _):
 #@commands.has_any_role('KING', 'admin')
 async def punish(ctx, curseType:int):
     #ToDo: punish those who try to punish the king
+    #ToDo: punish all
     author = ctx.message.author
     punished = ctx.message.mentions[0]
     punishedRole = discord.utils.get(ctx.guild.roles, name='punished')
@@ -188,7 +189,7 @@ async def tease(ctx, *text):
     key = key[:-1]
 
     if teased.id == owner_id:
-        await ctx.send(f'{ctx.message.author.mention}, coae te-ai gandit mult?')
+        await ctx.send(f'{ctx.message.author.mention}, te-ai gandit mult?')
         return
 
     admin = author.id == owner_id
@@ -275,7 +276,7 @@ async def on_message_delete(msg):
 #@bot.event
 #async def on_message(msg):
     #ToDo implement random messages
-    #if msg.content[0] != '%' and msg.author.id == 395656270683701279:
+    #if msg.content[0] != '%' and msg.author.id == david_id:
        # randomMsg = 'ti-am dat voie sa vorbesti?'
         #await msg.channel.send(f'{msg.author.mention} {randomMsg}')
     #await bot.process_commands(msg)
