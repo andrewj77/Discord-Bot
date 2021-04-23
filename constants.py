@@ -6,8 +6,6 @@ teasedFile = 'RepositoriesTextFiles/teaseTimers.txt'
 typingUsersFile = 'RepositoriesTextFiles/startedTyping.txt'
 
 owner_id = 336619205006852106
-david_id = 395656270683701279
-neghina_id = 385792261100666882
 
 punishDurationType1 = 15.0
 punishDurationType2 = 15.0
