@@ -1,16 +1,18 @@
 import asyncio
 import os, re
 import discord
-from dotenv import load_dotenv
 from discord.ext import commands
 from time import time
 from constants import *
+import os
 
 from Controllers import *
 
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+# load_dotenv()
+# TOKEN = os.getenv('DISCORD_TOKEN')
+
+TOKEN = os.environ.get('DISCORD_TOKEN')
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix = '%', case_insensitive = True, intents = intents)
